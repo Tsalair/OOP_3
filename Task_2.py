@@ -20,6 +20,6 @@ class YaUploader:
 if __name__ == '__main__':
     
     path_to_file = input('Введите путь к файлу на вашем компьютере: ')
-    token = input('Введите token': )
+    token = input('Введите token:' )
     uploader = YaUploader(token)
     result = uploader.upload(path_to_file)
