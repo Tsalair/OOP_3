@@ -3,8 +3,8 @@ import requests
 def most_intelligence(hero_list):
     all_heroes_list = requests.get('https://akabab.github.io/superhero-api/api/all.json').json()
     all_heroes_list_tuples = []
-    for dikt in all_heroes_list:
-        hero_tuple = list(dikt.items())
+    for item in all_heroes_list:
+        hero_tuple = list(item.items())
         all_heroes_list_tuples.append(hero_tuple)
     
     intel_list = []
